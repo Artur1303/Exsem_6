@@ -3,7 +3,7 @@
    Create
 {% endblock %}
 {% block content %}
-        <h1><a href=" {% url 'index' %} ">Добавить</a></h1>
+        <h1><a href=" {% url 'index' %} ">На главную</a></h1>
         {% url 'guest_book_create' as action_url %}
         {% include 'partial/guest_book_forms.html' with action_url=action_url button_text='Create' %}
 {% endblock %}
