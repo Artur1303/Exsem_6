@@ -50,6 +50,11 @@ body {
     text-decoration: underline;
 }
 
+.but{
+background: darkred;
+    font-weight: bold;
+}
+
 .error {
     font-weight: bold;
     color: red;
