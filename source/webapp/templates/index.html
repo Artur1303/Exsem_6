@@ -7,7 +7,7 @@
     {% for guest_book in guest_books %}
    <div class="card p-2 mt-2" style="width: 25rem;">
   <div class="card-body">
-    <h5 class="card-title">{{ guest_book.name }} {{ guest_book.email }} </h5>
+    <h5 class="card-title"><a href="{% url 'guest_book_view' guest_book.pk %} ">{{ guest_book.name }}</a> {{ guest_book.email }} </h5>
     <h6 class="card-subtitle mb-2 text-muted">{{ guest_book.text }}</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="card-link">Ссылка карты</a>
@@ -16,7 +16,7 @@
   </div>
    </div>
 
-{#        <a href="{% url 'product_update' product.pk %} ">Update</a>#}
-{#        <a href="{% url 'product_delete' product.pk %} ">Delete</a>#}
+{#        <a href="{% url 'product_update' guest_book.pk %} ">Update</a>#}
+{#        <a href="{% url 'product_delete' guest_book.pk %} ">Delete</a>#}
     {% endfor %}
 {% endblock %}

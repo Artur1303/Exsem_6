@@ -3,11 +3,11 @@ from django.http import HttpResponseNotAllowed
 from django.utils.timezone import make_naive
 
 from webapp.models import GuestBook
-# from webapp.forms import GuestBookForm
+from webapp.forms import GuestBookForm
 
 
 def index_view(request):
-    data = GuestBook.objects.all()
+    data = GuestBook.objects.filter(status='active').order_by('-created_at')
     return render(request, 'index.html', context={
         'guest_books': data
     })
@@ -18,7 +18,7 @@ def guest_book_view(request, pk):
     context = {'guest_book': guest_book}
     return render(request, 'guest_book_view.html', context)
 
-#
+
 def guest_book_create_view(request):
     if request.method == "GET":
         return render(request, 'guest_book_create.html', context={
@@ -30,12 +30,11 @@ def guest_book_create_view(request):
             # guest_book = Product.objects.create(**form.cleaned_data)
             guest_book = GuestBook.objects.create(
                 name=form.cleaned_data['name'],
-                description=form.cleaned_data['description'],
-                category=form.cleaned_data['category'],
-                amount=form.cleaned_data['amount'],
-                price=form.cleaned_data['price']
+                email=form.cleaned_data['email'],
+                text=form.cleaned_data['text'],
+                status=form.cleaned_data['status']
             )
-            return redirect('guest_book_view', pk=guest_book.pk)
+            return redirect('index')
         else:
             return render(request, 'guest_book_create.html', context={
                 'form': form
