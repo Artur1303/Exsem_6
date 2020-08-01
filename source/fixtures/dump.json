@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.guestbook",
+  "pk": 1,
+  "fields": {
+    "name": "\u0424\u0430\u0440\u0438\u0434",
+    "email": "blabla@com.com",
+    "text": "\u041f\u043e\u0441\u0442\u043e\u044f\u043d\u043d\u044b\u0439  \u043a\u043b\u0438\u0435\u043d\u0442",
+    "created_at": "2020-08-01T06:53:58.116Z",
+    "updated_at": "2020-08-01T06:53:58.116Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 2,
+  "fields": {
+    "name": "\u0412\u0430\u0441\u044f \u041f\u0443\u043f\u043a\u0438\u043d",
+    "email": "diavolik2006@yandex.ru",
+    "text": "\u041d\u043e\u0432\u044b\u0439 \u043a\u043b\u0438\u0435\u043d\u0438",
+    "created_at": "2020-08-01T06:54:46.899Z",
+    "updated_at": "2020-08-01T06:54:46.899Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 3,
+  "fields": {
+    "name": "\u041a\u0438\u0440\u0438\u043b",
+    "email": "blabla@com.ru",
+    "text": "\u0431\u0440\u043e\u043d\u044c \u043d\u0430  \u0430\u0432\u0433\u0443\u0441\u0442",
+    "created_at": "2020-08-01T06:55:26.882Z",
+    "updated_at": "2020-08-01T06:55:26.882Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 4,
+  "fields": {
+    "name": "\u0414\u0436\u043e\u043e\u043c\u0430\u0440",
+    "email": "joma@mail.ru",
+    "text": "\u0441\u043d\u044f\u0442\u044c  \u0431\u0440\u043e\u043d\u044c",
+    "created_at": "2020-08-01T06:56:48.931Z",
+    "updated_at": "2020-08-01T06:56:48.931Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.guestbook",
+  "pk": 5,
+  "fields": {
+    "name": "\u041a\u0437\u0431\u0435\u043a",
+    "email": "blabla@ya.ru",
+    "text": "\u0421\u043a\u0430\u043d\u0434\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043b\u0438\u0435\u043d\u0442",
+    "created_at": "2020-08-01T06:57:31.288Z",
+    "updated_at": "2020-08-01T06:57:31.288Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$5dlN9BJx73bS$4hHc60hqOEYQ/ot3HLqigMWs5fn2bRs330DKK8h9U74=",
+    "last_login": "2020-08-01T06:46:23.952Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-01T06:08:56.483Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
