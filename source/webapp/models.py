@@ -6,7 +6,7 @@ STATUS_CHOICES = [
     ('blocked', 'Заблокировано')]
 
 
-class Bock(models.Model):
+class GuestBook(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название')
     email = models.EmailField(verbose_name='Email')
     text = models.CharField(max_length=500, verbose_name='Запись')
