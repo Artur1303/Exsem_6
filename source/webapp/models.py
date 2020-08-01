@@ -8,7 +8,7 @@ STATUS_CHOICES = [
 
 class Bock(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название')
-    Email = models.EmailField(verbose_name='Email')
+    email = models.EmailField(verbose_name='Email')
     text = models.CharField(max_length=500, verbose_name='Запись')
     created_at = models.DateTimeField(auto_now=True, verbose_name='Время  создание')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Время обновление')
