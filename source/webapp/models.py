@@ -7,7 +7,7 @@ STATUS_CHOICES = [
 
 
 class GuestBook(models.Model):
-    name = models.CharField(max_length=100, verbose_name='Название')
+    name = models.CharField(max_length=100, verbose_name='ФИО')
     email = models.EmailField(verbose_name='Email')
     text = models.CharField(max_length=500, verbose_name='Запись')
     created_at = models.DateTimeField(auto_now=True, verbose_name='Время  создание')
