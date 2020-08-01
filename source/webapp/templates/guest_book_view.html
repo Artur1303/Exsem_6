@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Guest
+{% endblock %}
+{% block content %}
+   <h1>ФИО: {{ guest_book.name }}</h1>
+    <p>Emai: {{ guest_book.email }}</p>
+    <p>Запись: {{guest_book.text }}</p>
+    <p>Время создание: {{ guest_book.created_at }}</p>
+    <p>Время обновление: {{ guest_book.updated_at }}</p>
+    <p>Статус: {{ guest_book.status }}</p>
+    <a href="{% url 'product_update' product.pk %} ">Update</a>
+    <a href="{% url 'product_delete' product.pk %} ">Delete</a>
+{% endblock %}
